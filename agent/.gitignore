@@ -1,4 +1,5 @@
 .env
+.uv.lock
 agent/__pycache__
 
 
