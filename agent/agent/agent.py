@@ -45,12 +45,7 @@ mental_counselor = Agent(
         DESCRIPTION
     ),
     instruction=PROMPT,
-    output_key="financial_coordinator_output",
     tools=[
-        # AgentTool(agent=data_analyst_agent),
-        # AgentTool(agent=trading_analyst_agent),
-        # AgentTool(agent=execution_analyst_agent),
-        # AgentTool(agent=risk_analyst_agent),
     ],
 )
 

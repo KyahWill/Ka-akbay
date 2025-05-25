@@ -28,3 +28,7 @@ As a Concerned Loved One unsure how to help my family member, I want to get advi
 As a Concerned Loved One, I want to find information on accessible and appropriate mental health services, clinics, or professionals in the Philippines that I can suggest to my loved one, so that they have concrete options if they are willing to seek help.
 As a Concerned Loved One worried that my loved one might be in immediate danger, I want to get clear guidance from the chatbot on how to assess the urgency and what steps to take to ensure their safety, including when and how to contact emergency services for them.
 As a Concerned Loved One, I want to learn about support groups or resources available for families and caregivers of individuals with mental health conditions, so that I can also get support for myself and learn how to cope.
+
+## How to Contribute:
+1. Make a fork and make a pull request. I'll review it in my spare time
+
