@@ -41,5 +41,9 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"daisyui": "^5.0.43",
+		"dexie": "^4.0.11"
 	}
 }
