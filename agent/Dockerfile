@@ -6,7 +6,7 @@ ADD . /app
 
 # Sync the project into a new environment, asserting the lockfile is up to date
 WORKDIR /app
-EXPOSE 8000
+EXPOSE 8080
 RUN uv sync --locked
 
 CMD ["uv", "run", "adk", "web", "--port", "8080"]
