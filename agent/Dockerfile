@@ -9,6 +9,6 @@ WORKDIR /app
 EXPOSE 8000
 RUN uv sync --locked
 
-CMD ["uv", "run", "adk", "web"]
+CMD ["uv", "run", "adk", "web", "--port", "8080"]
 
 
