@@ -28,7 +28,7 @@ export class ADKApiService {
    */
   async createSession(userId: string = config.app.defaultUserId, sessionId?: string, state?: Record<string, any>): Promise<Session> {
     const sessionUUID = sessionId || this.generateSessionId();
-    
+
     const response = await fetch(`${this.baseUrl}/apps/root_agent/users/${userId}/sessions/${sessionUUID}`, {
       method: 'POST',
       headers: {
@@ -79,10 +79,10 @@ export class ADKApiService {
     }
 
     const data = await response.json();
-    
+
     // Parse the ADK response format to extract text content
     const textContent = this.extractTextFromResponse(data);
-    
+
     return {
       id: data.id || Date.now().toString(),
       content: textContent || 'No response received',

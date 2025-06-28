@@ -77,4 +77,4 @@ EXPOSE 8080
 # - `--host 0.0.0.0`: Binds to all network interfaces (needed for Docker/GCP)
 # - `--port 10003`: Runs the service on port 10003
 # -----------------------------------------------------------------------------
-CMD ["uv", "run", "adk", "api_server", "--port", "8080" ,"--host", "0.0.0.0"]
+CMD ["uv", "run", "adk", "api_server", "--port", "8080" ,"--host", "0.0.0.0", "--allow_origins=\"*\""]
