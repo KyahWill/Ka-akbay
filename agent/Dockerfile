@@ -68,7 +68,7 @@ RUN uv venv && \
 # 📡 Expose port 10003 so Docker knows which port the container serves traffic on
 # Note: This does not publish the port — just documents it
 # -----------------------------------------------------------------------------
-EXPOSE 10003
+EXPOSE 8080
 
 # -----------------------------------------------------------------------------
 # 🚀 Default command to run the server when container starts
@@ -77,4 +77,4 @@ EXPOSE 10003
 # - `--host 0.0.0.0`: Binds to all network interfaces (needed for Docker/GCP)
 # - `--port 10003`: Runs the service on port 10003
 # -----------------------------------------------------------------------------
-CMD ["uv", "run", "adk", "web", "--port", "10003" ,"--host", "0.0.0.0"]
+CMD ["uv", "run", "adk", "api_server", "--port", "8080" ,"--host", "0.0.0.0"]
