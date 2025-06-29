@@ -43,6 +43,7 @@
 		]
 	},
 	"dependencies": {
+		"@sveltejs/adapter-node": "^5.2.12",
 		"daisyui": "^5.0.43",
 		"dexie": "^4.0.11"
 	}
