@@ -1,5 +1,5 @@
 .env
 .uv.lock
-agent/__pycache__
+*/__pycache__
 
 
