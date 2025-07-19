@@ -129,46 +129,6 @@ docker build --target production -t mental-health-agent:prod .
 docker build --platform linux/amd64 -t mental-health-agent .
 ```
 
-## Testing with UV
-
-### 1. Unit Testing
-
-```bash
-# Install test dependencies
-uv add --dev pytest pytest-asyncio httpx
-
-# Run tests
-uv run pytest
-
-# Run with coverage
-uv run pytest --cov=root_agent --cov-report=html
-```
-
-### 2. Integration Testing
-
-```bash
-# Test the FastAPI application
-uv run python -m pytest tests/ -v
-
-# Test specific endpoints
-uv run python -c "
-import requests
-response = requests.get('http://localhost:8080/health')
-print(response.status_code)
-"
-```
-
-### 3. Load Testing
-
-```bash
-# Install load testing tools
-uv add --dev locust
-
-# Run load test
-uv run locust -f load_test.py --host=http://localhost:8080
-```
-
-## Google Cloud Run Deployment
 
 ### 1. Build and Push to Container Registry
 

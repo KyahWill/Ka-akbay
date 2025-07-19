@@ -1,0 +1,7 @@
+## deploying:
+
+```
+gcloud run deploy 
+```
+
+
