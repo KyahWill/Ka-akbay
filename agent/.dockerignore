@@ -1,0 +1,35 @@
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+.venv/
+pip-wheel-metadata/
+
+# Editor/IDE specific ignores
+.vscode/
+.idea/
+*.swp
+*.bak
+*.swo
+
+# Build and dependency related ignores
+dist/
+build/
+*.egg-info/
+.coverage
+.tox/
+htmlcov/
+.pytest_cache/
+
+# Log and temporary files
+*.log
+tmp/
+temp/
+
+# Version control ignores (if not already handled by .gitignore)
+.git/
+.gitignore
